@@ -30,7 +30,7 @@ Ok folks, let's dive in and start their own [Virus Total Version](https://www.vi
 
 Put in the given hash and you'll find the answers for Question 1 and 2.
 
-<img src="/assets/img/writeups/invite-only/q1.png">
+<img src="/assets/img/writeups/invite-only/q1.png" alt="Invite Only - Question 1">
 
 **Question 1: What is the name of the file identified with the flagged SHA256 hash?**  
 _syshelpers.exe_ 
@@ -40,7 +40,7 @@ _WIN32 EXE_
 
 For question 3 and 4 click on Relations! And don't forget to copy the hashes :)
 
-<img src="/assets/img/writeups/invite-only/q3.png">
+<img src="/assets/img/writeups/invite-only/q3.png" alt="Invite Only - Question 3">
 
 **Question 3: What are the execution parents of the flagged hash? List the names chronologically, using a comma as a separator. Note down the hashes for later use.**  
 _361GJX7J,installer.exe_ 
@@ -50,14 +50,14 @@ _Aclient.exe_
 
 For question 5, copy the second hash of question 3 into the search bar and go to Relations again. There you'll find 20 dropped files and 4 of them are malicious ones and the answer!
 
-<img src="/assets/img/writeups/invite-only/q5.png">
+<img src="/assets/img/writeups/invite-only/q5.png" alt="Invite Only - Question 5">
 
 **Question 5: Research the second hash in question 3 and list the four malicious dropped files in the order they appear (from up to down), separated by commas.**  
 _searchhost.exe,syshelpers.exe,nat.vbs,runsys.vbs_
 
 Next question was really tricky for me because I am not yet familiar with the different malware family names. So I found it on the original VirusTotal Website. Go there and put the flagged IP into the search bar. In the Relations Tab you'll find Communication Files. I chose one of them and bam!
 
-<img src="/assets/img/writeups/invite-only/q6.png">
+<img src="/assets/img/writeups/invite-only/q6.png" alt="Invite Only - Question 6">
 
 **Question 6: Analyse the files related to the flagged IP. What is the malware family that links these files?**  
 _asyncrat_

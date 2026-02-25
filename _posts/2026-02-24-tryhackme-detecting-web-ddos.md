@@ -49,7 +49,7 @@ Have you ever tried to visit your favorite website, only to watch it endlessly l
 
 ### Denial-of-Service (DoS)
 
-<img src="https://tryhackme-images.s3.amazonaws.com/user-uploads/616945d482ef350052080da1/room-content/616945d482ef350052080da1-1757387911836.svg" />
+<img alt="TryHackMe image" src="https://tryhackme-images.s3.amazonaws.com/user-uploads/616945d482ef350052080da1/room-content/616945d482ef350052080da1-1757387911836.svg" />
 
 Any DoS attack is considered successful if it prevents a web service from functioning as intended. Let’s begin by looking at how even a simple, targeted attack can cause a website to become unavailable.
 
@@ -57,7 +57,7 @@ Imagine your website, a popular e-commerce site that sells bicycle parts, has a 
 
 ### Distributed Denial-of-Service (DDoS)
 
-<img src="https://tryhackme-images.s3.amazonaws.com/user-uploads/616945d482ef350052080da1/room-content/616945d482ef350052080da1-1758101833801.svg" />
+<img alt="TryHackMe image" src="https://tryhackme-images.s3.amazonaws.com/user-uploads/616945d482ef350052080da1/room-content/616945d482ef350052080da1-1758101833801.svg" />
 
 The limitation of a basic DoS attack is that it relies on a single machine and a single internet connection. While one computer can generate many requests, its impact is capped by its CPU, memory, bandwidth, and network.
 
@@ -92,7 +92,7 @@ _Botnet_
 
 ## 3. Attack Motives
 
-<img src="https://tryhackme-images.s3.amazonaws.com/user-uploads/616945d482ef350052080da1/room-content/616945d482ef350052080da1-1756796553744.svg" />
+<img alt="TryHackMe image" src="https://tryhackme-images.s3.amazonaws.com/user-uploads/616945d482ef350052080da1/room-content/616945d482ef350052080da1-1756796553744.svg" />
 
 Now that you have learned how attackers launch DoS and DDoS attacks, let's look at why they do it. At first glance, a short web service outage may seem minor, but for organizations that depend on constant availability, the consequences can be severe, leading to lost income, frustrated users, and reputational damage.
 
@@ -162,7 +162,7 @@ Normal User Traffic - Every few seconds, a user requests a page and receives a r
 DoS Attack - Beginning at 10:01:10, you can see the IP address 203.0.113.55 begin to send repeated GET requests to /login.php
 Web Server Down - Users are requesting pages and receiving 503 responses indicating the service is unavailable
 
-<img src="https://tryhackme-images.s3.amazonaws.com/user-uploads/616945d482ef350052080da1/room-content/616945d482ef350052080da1-1756796553744.svg" />
+<img alt="TryHackMe image" src="https://tryhackme-images.s3.amazonaws.com/user-uploads/616945d482ef350052080da1/room-content/616945d482ef350052080da1-1756796553744.svg" />
 
 Hands On
 
@@ -191,11 +191,11 @@ Normal User Requests - A few requests to various pages every minute
 DoS Attack - 1,000 requests to /login.php within a one-minute timeframe
 Requested Pages
 
-<img src="https://tryhackme-images.s3.amazonaws.com/user-uploads/616945d482ef350052080da1/room-content/616945d482ef350052080da1-1756958638388.svg" />
+<img alt="TryHackMe image" src="https://tryhackme-images.s3.amazonaws.com/user-uploads/616945d482ef350052080da1/room-content/616945d482ef350052080da1-1756958638388.svg" />
 
 Looking over the same requests but filtering by the user agent (useragent) and IP address (clientip) fields enables you to see more details about where the requests originated.
 
-<img src="https://tryhackme-images.s3.amazonaws.com/user-uploads/616945d482ef350052080da1/room-content/616945d482ef350052080da1-1756958638452.svg" />
+<img alt="TryHackMe image" src="https://tryhackme-images.s3.amazonaws.com/user-uploads/616945d482ef350052080da1/room-content/616945d482ef350052080da1-1756958638452.svg" />
 
 Hands On
 
@@ -244,7 +244,7 @@ Challenges
 One way to stop automated traffic is to require a challenge before granting access. This could be a CAPTCHA, where the user solves a puzzle, like clicking images or checking a box. For humans, it’s a small step, but for bots, it can block or slow down an attack.
 Websites can also use JavaScript challenges, which run quietly in the background to confirm if a visitor is a real user or automated traffic. Legitimate users usually don’t notice them, but automated tools and botnets often fail, making these challenges an effective filter against malicious traffic.
 
-<img src="https://tryhackme-images.s3.amazonaws.com/user-uploads/616945d482ef350052080da1/room-content/616945d482ef350052080da1-1757551295165.gif" />
+<img alt="TryHackMe image" src="https://tryhackme-images.s3.amazonaws.com/user-uploads/616945d482ef350052080da1/room-content/616945d482ef350052080da1-1757551295165.gif" />
 
 Network and Infrastructure Defenses
 
@@ -257,11 +257,11 @@ Total bandwidth over a 30-day period - This shows the entire traffic volume over
 Total cached bandwidth by CDN edge servers - This represents how much traffic was successfully delivered by the CDN's edge servers. Nearly all of the bandwidth being cached indicates that Cloudflare absorbed the attack traffic before it could overwhelm the backend.
 Traffic spike from DDoS attack - The spike in the graph is the signature of the DDoS attack. Without a CDN, the flood of requests would have hit the origin server.
 
-<img src="https://tryhackme-images.s3.amazonaws.com/user-uploads/616945d482ef350052080da1/room-content/616945d482ef350052080da1-1756817646267.svg" />
+<img alt="TryHackMe image" src="https://tryhackme-images.s3.amazonaws.com/user-uploads/616945d482ef350052080da1/room-content/616945d482ef350052080da1-1756817646267.svg" />
 
 Beyond absorbing traffic, CDNs also provide analysts with powerful visibility, including helpful visuals and diagnostics of website traffic. This lets you quickly break down requests by geographic location, volume, and source patterns, helping distinguish malicious traffic from legitimate users.
 
-<img src="https://tryhackme-images.s3.amazonaws.com/user-uploads/616945d482ef350052080da1/room-content/616945d482ef350052080da1-1756818035660.svg" />
+<img alt="TryHackMe image" src="https://tryhackme-images.s3.amazonaws.com/user-uploads/616945d482ef350052080da1/room-content/616945d482ef350052080da1-1756818035660.svg" />
 
 Web Application Firewall (WAF)
 CDNs typically integrate WAFs in an effort to shield their customers' servers. They inspect incoming traffic and either allow, challenge, or block requests. WAFs work off of rules that integrate known attack indicators and threat intelligence. Modern WAF solutions are already very good at mitigating DoS and DDoS attacks because they know what to look out for. Custom rules can also be developed to assist in defending against targeted threats.
