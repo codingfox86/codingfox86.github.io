@@ -1,0 +1,17 @@
+Folder structure
+
+assets/img/
+
+ writeups/
+   detecting-web-ddos/
+     cover.png
+     logfile.png
+
+   invite-only/
+     cover.png
+     q1.png
+
+ projects/
+   evil-twin/
+     cover.png
+     setup.png

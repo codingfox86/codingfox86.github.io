@@ -1,0 +1,68 @@
+nano _projects/project-name.md
+
+---
+title: "Project Name"
+description: Short one-line summary
+date: YYYY-MM-DD
+image:
+  path: /assets/img/projects/project-name/cover.png
+---
+
+## Overview
+
+What this project is and why it matters.
+
+---
+
+## Objectives
+
+- Objective 1
+- Objective 2
+- Objective 3
+
+---
+
+## Hardware / Software
+
+Hardware:
+
+- Raspberry Pi 4
+- Alfa AWUS036AXM
+
+Software:
+
+- Parrot OS
+- Airgeddon
+- Wireshark
+
+---
+
+## Architecture / Setup
+
+Explain setup.
+
+![Architecture](/assets/img/projects/project-name/setup.png)
+
+---
+
+## Implementation
+
+Step-by-step explanation.
+
+---
+
+## Results
+
+What worked, what didn’t.
+
+---
+
+## Lessons Learned
+
+Important insights.
+
+---
+
+## Repository
+
+https://github.com/codingfox86/project-name

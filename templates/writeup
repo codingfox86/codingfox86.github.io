@@ -1,0 +1,64 @@
+nano _posts/YYYY-MM-DD-thm-room-name.md
+
+---
+title: "TryHackMe: Room Name"
+date: YYYY-MM-DD HH:MM:SS +0100
+categories: [Writeups, TryHackMe]
+tags: [tryhackme, detection, network]   # adjust
+image:
+  path: /assets/img/writeups/room-name/cover.png
+  alt: TryHackMe - Room Name
+---
+
+## Room Link
+
+https://tryhackme.com/room/roomname
+
+![Room Icon](/assets/img/writeups/room-name/cover.png)
+
+---
+
+## Overview
+
+Short personal summary (2–4 sentences):
+
+Example:
+
+This room focuses on detecting web-based DDoS attacks using log analysis and SIEM tools. It covers identifying malicious traffic patterns, analyzing indicators, and understanding mitigation techniques.
+
+---
+
+## Task 1 — Task Name
+
+(original THM content)
+
+**Question:**  
+text
+
+Answer:  
+answer
+
+![Screenshot](/assets/img/writeups/room-name/screenshot1.png)
+
+---
+
+## Task 2 — Task Name
+
+(original content + answers)
+
+---
+
+## Key Takeaways
+
+• What you learned  
+• Tools used (Splunk, Wireshark, etc.)  
+• Skills gained  
+
+---
+
+## Skills Demonstrated
+
+- Log analysis
+- Threat intelligence investigation
+- SIEM usage
+- Incident response workflow
