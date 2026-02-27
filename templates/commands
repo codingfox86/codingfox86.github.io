@@ -1,0 +1,5 @@
+bundle exec jekyll serve   # test locally
+
+git add -A
+git commit -m "Add new writeup"
+git push
