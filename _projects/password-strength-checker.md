@@ -8,7 +8,7 @@ permalink: /projects/password-strength-checker/
 ## Overview
 I've built a beginner-friendly **HTML/CSS/JavaScript** password strength checker that updates in real time while you type.
 
-_Note: Since I CAN code HTML and CSS but not Javascript in deapth I used different sources to build a unique js-file which I checked with an AI tool._
+_Note: Since I CAN code HTML and CSS but not Javascript in depth I used different sources to build a unique js-file which I checked with an AI tool._
 
 My goal was to keep the code explainable while still making the UI look **dope** (dark & minimal).
 
