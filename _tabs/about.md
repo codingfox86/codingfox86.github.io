@@ -16,4 +16,5 @@ This portfolio serves as a structured documentation of my learning journey, proj
 
 ## Contact
 
-LinkedIn: https://www.linkedin.com/in/anne-zamorowski/
+- [LinkedIn](https://www.linkedin.com/in/anne-zamorowski/)
+- [TryHackMe](https://tryhackme.com/p/securityfox)
