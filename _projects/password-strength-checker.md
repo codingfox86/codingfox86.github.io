@@ -3,6 +3,7 @@ title: "Password Strength Checker (JS)"
 description: Minimal dark-themed password strength checker with live meter + checklist.
 date: 2026-03-02
 permalink: /projects/password-strength-checker/
+layout: post
 ---
 
 ## Overview

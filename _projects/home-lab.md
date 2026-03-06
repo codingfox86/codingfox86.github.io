@@ -5,14 +5,26 @@ date: 2026-03-05
 image:
 path: /assets/img/projects/home-lab/lab-overview.png
 alt: Virtual pentesting lab architecture
+layout: post
 ---
 
 ## Overview
 
 This project documents the setup of my personal penetration testing lab using VirtualBox.  
-The goal of this environment is to provide a safe and isolated space for practicing penetration testing techniques, vulnerability exploitation, and Active Directory attack scenarios.
 
 The lab provides a safe and controlled environment where attacks and defensive techniques can be tested without impacting real systems.
+
+---
+
+## Lab Goals
+
+The goal of this environment is to simulate a small enterprise-style network for practicing penetration testing techniques in a safe and isolated setup.
+  
+  The lab includes:
+  - an attacker machine (Kali Linux)
+  - vulnerable Linux targets
+  - containerized web applications
+  - a Windows Server for future Active Directory testing
 
 ---
 
@@ -35,18 +47,6 @@ Kali Linux (Attacker)
 └── Windows Server 2019 (Domain Controller - future)
 192.168.56.40
 {% endhighlight %}
-
-
----
-
-## Lab Goals
-
-The objectives of this environment include:
-
-- Practicing penetration testing techniques
-- Simulating a small enterprise network
-- Performing vulnerability assessments and exploitation
-- Testing Active Directory attack techniques
 
 ---
 
@@ -79,6 +79,38 @@ _Network configuration for Kali Linux._
 
 ---
 
+## Lab Services (Docker Host)
+
+The Ubuntu Server VM acts as a container host for intentionally vulnerable web applications used during pentesting practice.
+
+Because Ubuntu Server runs without a graphical interface, applications are hosted as web services and accessed remotely from the attacker machine.
+
+{% highlight js %}
+Kali Linux (attacker)
+│
+│ HTTP requests
+│
+Ubuntu Server (Docker Host)
+│
+├─ OWASP Juice Shop
+├─ DVWA
+├─ WebGoat
+└─ other vulnerable apps
+{% endhighlight %}
+
+Example for running the OWASP Juice Shop:
+Running in Ubuntu Server:
+{% highlight js %}
+docker run -d -p 3000:3000 bkimminich/juice-shop
+{% endhighlight %}
+
+Then access from a browser in Kali Linux:
+{% highlight js %}
+http://192.168.56.20:3000
+{% endhighlight %}
+
+---
+
 ## Example Test
 
 After setting up the environment, network connectivity and services can be tested from the Kali attacker machine.
@@ -100,3 +132,22 @@ Planned expansions for the lab include:
 - Windows client machine
 - Vulnerable Docker applications
 
+---
+
+## Troubleshooting & Lessons Learned
+
+Windows Server not responding to ping
+
+Problem: The Windows Server VM could not be reached from Kali or Ubuntu.
+
+Cause: The Windows network profile was set to Public, which blocks ICMP requests
+in Windows Defender Firewall.
+
+Solution: Changed the network profile to Private and allowed ICMP:
+
+{% highlight js %}
+New-NetFirewallRule -DisplayName "Allow ICMPv4-In" -Protocol ICMPv4
+{% endhighlight %}
+
+What I learned: Windows firewall behavior depends on the network profile. Public networks
+block most inbound traffic by default.

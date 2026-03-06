@@ -1,5 +1,8 @@
 ---
 title: "Evil Twin Wi-Fi Lab"
+description: Setup of an Evil Twin Wi-Fi attack
+date: 2026-02-24
+layout: post
 ---
 
 ## Overview
