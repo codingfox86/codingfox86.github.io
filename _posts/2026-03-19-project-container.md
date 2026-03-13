@@ -8,6 +8,6 @@ image:
   alt: Deploy a Docker Container
 ---
 
-➡️ **Documentation about how I deploy the OWASP Juice Shop via Docker Container in my Home Lab**  
+➡️ **Documentation about how I deploy the OWASP Juice Shop via Docker Container in Ubuntu Server in my Home Lab**  
 
 Find it on the project page!
