@@ -11,3 +11,7 @@
 - type: tryhackme
   icon: "fas fa-skull"
   url: "https://tryhackme.com/p/securityfox"
+
+- type: codeberg
+  icon: "fas fa-mountain"
+  url: "https://codeberg.org/securityfox"
