@@ -88,4 +88,4 @@ function evaluatePassword(pw) {
 
 ## Links
 
-🔗 [View Source Code on GitHub and try it yourself!](https://github.com/codingfox86/password-strength-checker)
+🔗 [View Source Code on Codeberg and try it yourself!](https://codeberg.org/securityfox/password-strength-checker)
