@@ -2,25 +2,52 @@
 layout: default
 ---
 
-<div class="intro-section">
+<div style="margin-bottom: 2rem;">
 
-  <h1 class="mb-3">Welcome!</h1>
+<h2>Welcome!</h2>
 
-  <p class="lead">
-    This is my collection of practical cyber security projects and hands-on writeups.
-  </p>
+<p>
+This is my collection of practical cyber security projects, pentesting labs and TryHackMe write-ups.
+</p>
 
-  <div class="mt-4">
-    <a href="/projects/" class="btn btn-primary me-2">
-      View Projects
-    </a>
-    <a href="/writeups/" class="btn btn-outline-primary">
-      View Writeups
-    </a>
-  </div>
-
-  <hr class="my-5">
 </div>
+
+<hr>
+
+<div style="margin: 2rem 0;">
+
+<h4>⭐ Featured Project: Virtual Pentesting Lab ⭐</h4>
+
+<div style="display: flex; gap: 24px; align-items: flex-start; flex-wrap: wrap;">
+
+<div style="flex: 0 1 420px;">
+<img
+src="/assets/img/projects/home-lab/cover2.png"
+style="width: 100%; max-width: 420px; height: auto; border-radius: 10px; display: block;">
+</div>
+
+<div style="flex: 1 1 320px; min-width: 280px; max-width: 520px;">
+
+<p>
+A personal lab environment built with VirtualBox to simulate a small enterprise network.
+It includes Kali Linux, Ubuntu Server, Metasploitable, Windows 11 and a Windows Server (with Active Directory currently in progress).
+</p>
+
+<p>
+<a href="/projects/home-lab/" style="font-weight: bold;">
+→ View Project
+</a>
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<hr>
+
+{{ content }}
 
 {% include lang.html %}
 

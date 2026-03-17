@@ -44,8 +44,11 @@ Kali Linux (Attacker)
 ├── Metasploitable2 (Vulnerable Linux Target)
 │ 192.168.56.30
 │
-└── Windows Server 2019 (Domain Controller - future)
-192.168.56.40
+├── Windows Server 2019 (Domain Controller - future)
+│ 192.168.56.40
+│
+└── Windows 11 (Client)
+ 192.168.56.50
 {% endhighlight %}
 
 ---
@@ -59,6 +62,7 @@ The following technologies are used to build the lab environment:
 - Ubuntu Server
 - Metasploitable2
 - Windows Server 2019
+- Windows 11
 
 ---
 
@@ -72,6 +76,7 @@ All machines are connected to an isolated VirtualBox internal network called **L
 | Ubuntu Server | 192.168.56.20 | Docker Lab Host |
 | Metasploitable2 | 192.168.56.30 | Vulnerable Linux Target |
 | Windows Server | 192.168.56.40 | Domain Controller (future) |
+| [NEW] Windows 11 | 192.168.56.50 | Client |
 
 ![network-config](/assets/img/projects/home-lab/01.png)
 
